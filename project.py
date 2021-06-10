@@ -39,11 +39,17 @@ while True:
     
     
     inp = input(
-        "\nWhat operation would you like to perform?\n\nPress 1 to Withdraw\nPress 2 to Deposit\nPress 5 to Exit\n\n-")
+        "\nWhat operation would you like to perform?\n\nPress 1 to Withdraw\nPress 2 to Deposit\nPress 3 To Check Balance\nPress 5 to Exit\n\n-")
     if inp == '5':   
         print('Exiting...')
         time.sleep(1)
         break
+    if inp == '3':
+        print('processing...')
+        time.sleep(1)
+        print("Balance: R", account.balance)
+        time.sleep(3) 
+        continue
     inp2 = input("Amount: ")
     if inp == "2":
         print('processing...')
@@ -64,7 +70,3 @@ while True:
     else:
         print("Not an valid command! Try again!\n")
         continue
-
-
-
-
